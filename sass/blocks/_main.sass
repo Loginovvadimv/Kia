@@ -1,6 +1,8 @@
 .main
-  padding-top: 115px
+  padding: 115px 0 42px 0
   background-color: #1e1e1e
+  &__title
+    color: var(--title-color)
   &__container
     display: flex
     justify-content: space-between
@@ -19,6 +21,8 @@
       width: 470px
       line-height: 30px
       margin: 0
+  &__technologs_title
+    color: var(--title-color)
   &__technologs_container
     display: flex
     justify-content: space-between
@@ -45,5 +49,14 @@
       font-weight: 300
       line-height: 30px
       list-style-type: disc
-
-
+  &__dots
+    display: flex
+    justify-content: center
+  &__ellipse
+    width: 25px
+    height: 25px
+    background-color: var(--title-color)
+    border-radius: 100%
+    cursor: pointer
+    &_center
+      margin: 0 35px 0 35px
