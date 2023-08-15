@@ -1,5 +1,6 @@
 .content
   padding: 30px 0 100px 0
+  background: linear-gradient(180deg, #FFF 0%, #D7D7D7 100%)
   &__title
     color: #222223
   &__wrapper
@@ -13,20 +14,21 @@
       position: absolute
       top: -50px
       left: -30px
-      -webkit-transition: all 1s ease
-      transition: all 1s ease
+      transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28)
+      z-index: 5
       &:hover
-        -webkit-transform: rotate(15deg)
         transform: rotate(15deg)
   &__engine
     &_wrapper
       min-width: 430px
-      border: #ede9e9 solid 1px
+      border: #CECDCD solid 1px
       max-height: 450px
       border-radius: 25px
       padding: 35px 35px 35px 35px
       margin-bottom: 30px
-      background-color: #fffcfc
+      background: linear-gradient(154deg, #F1F1F1 0%, #EAE6E6 100%)
+      position: relative
+      z-index: 3
   &__characteristic
     display: flex
     justify-content: space-between
@@ -48,16 +50,144 @@
     font-weight: 600
     color: #222223
     padding: 10px 15px
-    border: #222223 solid 1px
+    border: #CECDCD solid 1px
     margin: 0 5px
     border-radius: 30px
     cursor: pointer
+    background: linear-gradient(158deg, #FFF 0%, #E8DDDD 100%)
+    &_active
+      background: linear-gradient(180deg, #4B4B4B 0%, #222223 100%)
+      color: #fff
+.equipment
+  &__carousel
+    &_title
+      text-align: center
+      font-size: 48px
+      font-weight: 600
+      span
+        font-size: 24px
+        font-weight: 600
+    &_slide
+      display: block
+      margin: 0 auto
+    &_img
+      width: 155px
+      height: 155px
+      background: rgba(188, 194, 202, 0.50)
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+    &_info
+      max-width: 125px
+      text-align: center
+      margin: 15px auto 0 auto
+      font-size: 18px
+      font-weight: 400
+    &_wrapper
+      display: flex
+      justify-content: space-between
+      max-width: 970px
+      margin: 0 auto 75px auto
+.getAuto
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 55px 
+  &__btn
+    background: var(--title-color)
+    margin: 50px auto 0 auto
+    display: block
     &:hover
-      background-color: rgba(182, 176, 176, 0.7)
-    &:active
-      background-color: #262424
-      color: #c7c0c0
-      
-
-
-
+      background: rgba(188,194,202,.5)
+      color: #000
+  &__info
+    position: absolute
+    bottom: 25px
+    left: 25px
+    font-size: 24px
+    font-weight: 400
+    color: #fff
+  &__img
+    position: relative
+.blue
+  background: linear-gradient(139deg, #3786E7 0%, rgba(18, 24, 32, 0.96) 100%)
+.black
+  background: linear-gradient(180deg, #373636 0%, #000 100%)
+.red
+  background: linear-gradient(180deg, #940413 0%, #3E070D 100%)
+.gray
+  background: linear-gradient(180deg, #CFD0D2 0%, #7A7A7B 100%)
+.configurator
+  padding-top: 100px
+  position: relative
+  &__title
+    color: linear-gradient(180deg, #4B4B4B 0%, #222223 100%)
+    margin-top: 100px
+  &__subtitle
+    text-align: center
+    margin-bottom: 40px
+    color: linear-gradient(180deg, #4B4B4B 0%, #222223 100%)
+    font-size: 24px
+    font-weight: 600
+  &__circle
+    width: 550px
+    height: 550px
+    border-radius: 100%
+    margin: 0 auto 75px auto
+    img
+      position: absolute
+      // left: 50px
+    &_img_black
+      left: 232px
+      top: 382px
+    &_img_blue
+      left: 50px
+      top: 325px
+    &_img_red
+      left: 75px 
+      top: 271px
+    &_img_gray
+      width: 930px
+      top: 290px
+      left: 125px
+  &__links
+    width: 100%
+    border-radius: 30px
+    background: linear-gradient(180deg, #4B4B4B 0%, #222223 100%)
+    padding: 30px 0 30px 0 
+    margin-bottom: 35px
+    ul
+      display: flex
+      justify-content: space-around
+      li
+        a
+          text-decoration: none
+          color: #fff
+          opacity: 0.6
+          font-size: 24px
+          font-weight: 600
+  &__link
+    &_active
+      opacity: 1 !important
+  &__wrapper
+    background: rgba(125, 118, 118, 0.20)
+    border-radius: 30px
+    padding: 25px 0
+    position: relative
+    z-index: 3
+  &__colors_wrapper
+    display: flex
+    justify-content: space-around
+  &__color_box
+    padding: 48px 40px
+    margin-bottom: 20px
+    cursor: pointer
+    &_active
+      border: 6px solid #fff
+      padding: 44px 37px
+  &__color_descr
+    font-size: 24px
+    font-weight: 400
+    text-align: center
+          
