@@ -6,6 +6,8 @@
 @import 'elements/_ellipse'
 @import 'blocks/_credit'
 @import 'blocks/_links'
+@import 'blocks/_footer'
+@import 'elements/_adaptive'
 :root
   --title-color: #D68B1C
 html
@@ -27,6 +29,11 @@ h3
   font-weight: 400
   color: #fff
   margin: 10px 0 20px 0
+h5
+  color: black
+  font-size: 28px
+  font-weight: 700
+  color: #212529
 *
   font-family:"Montserrat",sasn-serif
 body
@@ -57,4 +64,17 @@ a
     opacity: 0.1
   100%
     opacity: 1
-
+.carousel-caption-descr
+  color: #212529
+  font-size: 28px
+  font-weight: 700
+.carousel-item
+  img
+    margin-bottom: 30px !important
+.carousel-indicators
+  button
+    background-color: #212529 !important
+.carousel-control-prev
+  display: none
+.carousel-control-next
+  display: none

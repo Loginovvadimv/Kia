@@ -13,6 +13,7 @@
     display: flex
     justify-content: space-between
     padding: 0
+    margin: 0
   &__li
     a
       color: rgba(255, 255, 255, 0.80)
@@ -37,17 +38,18 @@
     z-index: 1
     -webkit-transition: all 1s ease
     transition: all 1s ease
+    &_media
+      display: none
     &:hover
       transform: scale(1.05)
   &__subtitle
     display: flex
     justify-content: right
-    align-items: top
   &__info
     color: #FFF
     font-size: 30px
     font-weight: 800
-    max-width: 130px
+    // max-width: 130px
     text-align: center
     padding-left: 130px
     span
@@ -55,7 +57,8 @@
       font-size: 16px
       font-weight: 400
       opacity: 0.8
-
+  &__hamburger
+    display: none
 
 
 
